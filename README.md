@@ -54,7 +54,7 @@ The toolkit creates a log file (`SystemOptimizerLog.txt`) that records actions t
 This toolkit is intended for use by individuals familiar with Windows systems. Use it at your own risk, and ensure you have backups of important data before making changes to your system.
 
 ## License
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+This project is licensed under the AGPL-3.0 License - see the [LICENSE](LICENSE) file for details.
 
 ## Author
 Created by [Your Name]
