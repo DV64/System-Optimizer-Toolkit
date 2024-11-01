@@ -1,60 +1,46 @@
-# System Optimizer Toolkit
+# System Optimizer Toolkit V1.1
 
-## Description
-The "System Optimizer Toolkit" is a utility designed to enhance the performance of Windows operating systems through a collection of useful tools. These tools include system information checks, internet connectivity tests, TPM 2.0 verification, temporary file cleanup, and many other functions aimed at improving system performance.
+## Overview
+
+The **System Optimizer Toolkit V1.1** is a powerful command-line utility designed for Windows users who want to enhance their system's performance, gather essential information, and maintain their environment efficiently. This toolkit consolidates various system maintenance and optimization tasks into a single, user-friendly interface, streamlining the process for both novice and experienced users.
 
 ## Features
-- View essential system information.
-- Test internet connectivity.
-- Check for TPM 2.0 support.
-- Verify system compatibility with Windows 11.
-- Delete temporary files.
-- Scan for unwanted programs.
-- Optimize system performance.
-- Test hard drive health.
-- Backup important files.
-- Restore from backup.
-- Check for Windows updates.
-- Address internet connection issues.
-- Check for system file corruption.
-- Address application issues.
 
-## Requirements
-- The script must be run as an administrator to ensure full access to all functionalities.
-- Windows must be installed on your device.
+### 1. Information Tools
+This section allows users to access vital system information quickly:
+- **View System Information**: Displays comprehensive details about the system, including:
+  - General system information (OS version, uptime)
+  - Memory details (capacity, speed)
+  - Network adapter status (MAC address, speed)
+  - CPU specifications (cores, clock speed)
+  - Disk drive status (model and size)
+- **Internet Test**: Pings a reliable external server (e.g., Google) to check internet connectivity.
+- **TPM 2.0 Check**: Validates the presence of TPM 2.0 for security features.
+- **Windows 11 Compatibility Check**: Evaluates whether the system meets the requirements for Windows 11.
 
-## How to Use
-1. Download the script and save it to a suitable location on your computer.
-2. Right-click the file and select "Run as administrator" to execute the tool.
-3. A user interface will appear with a list of available options.
-4. Enter the number corresponding to the option you wish to execute and press Enter.
-5. Follow the on-screen instructions to complete the selected task.
+### 2. Optimize Tools
+This section includes tools to clean and optimize the system:
+- **Delete Temp Files**: Removes unnecessary temporary files from the user and system directories to free up space and improve performance.
+- **Scan for Unwanted Programs**: Lists installed programs, allowing users to identify and remove unwanted software.
+- **Optimize System Performance**: Disables unnecessary startup programs and adjusts system settings for optimal performance.
+- **Test Hard Drive Health**: Checks the health status of all connected disk drives and alerts users if any issues are detected.
 
-## Options
-- **1. View System Information**: Displays basic system information such as OS name, processor, and memory.
-- **2. Internet Test**: Pings Google to check internet connectivity.
-- **3. TPM 2.0 Check**: Verifies if TPM 2.0 is supported and enabled on the system.
-- **4. Check Windows 11 Compatibility**: Checks if the system meets the requirements for Windows 11.
-- **5. Delete Temp Files**: Deletes temporary files from the user and Windows temp directories.
-- **6. Scan for Unwanted Programs**: Scans for installed programs and identifies those that haven't been used recently.
-- **7. Optimize System Performance**: Disables unnecessary startup programs and sets the power plan to high performance.
-- **8. Test Hard Drive Health**: Retrieves and displays the status of each disk drive.
-- **9. Backup Important Files**: Backs up system settings or important files.
-- **10. Restore from Backup**: Restores system settings or important files from a backup.
-- **11. Check for Windows Updates**: Checks for available Windows updates.
-- **12. Internet Connection Issues**: Resets TCP/IP and flushes DNS settings.
-- **13. System File Corruption**: Runs System File Checker (SFC) and DISM to repair system files.
-- **14. Application Issues**: Attempts to repair installed applications.
-- **15. Exit**: Exits the toolkit.
+### 3. Backup and Restore
+This section helps users manage their data effectively:
+- **Backup Important Files**: Prompts the user to specify a backup location and copies important files (Documents, Desktop, Pictures, Downloads) to that location.
+- **Restore from Backup**: Allows users to restore files from a specified backup location back to their original directories.
 
-## Logging
-The toolkit creates a log file (`SystemOptimizerLog.txt`) that records actions taken and any errors encountered during execution. This log can be useful for troubleshooting.
+### 4. Maintenance
+Tools for ongoing system maintenance:
+- **Check for Windows Updates**: Launches the Windows Update settings to check for and install updates.
+- **Internet Connection Issues**: Tests the internet connection and provides troubleshooting tips if issues are detected.
+- **System File Corruption Check**: Runs the System File Checker (SFC) to scan for and repair corrupted system files.
+- **Application Issues**: Guides users to the Event Viewer to check for application-related errors and logs.
 
-## Disclaimer
-This toolkit is intended for use by individuals familiar with Windows systems. Use it at your own risk, and ensure you have backups of important data before making changes to your system.
+### 5. Check for Updates
+Automatically checks for updates to the toolkit by fetching the latest version information from the GitHub repository.
 
-## License
-This project is licensed under the AGPL-3.0 License - see the [LICENSE](LICENSE) file for details.
+## Usage
 
-## Author
-Created by DarkVairous
+### Prerequisites
+- **Administrative Privileges**: This script requires administrative access to perform certain operations. Ensure you run the script as an administrator to avoid permission-related errors.
