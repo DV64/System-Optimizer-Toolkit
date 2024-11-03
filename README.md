@@ -1,104 +1,115 @@
-System Optimizer Toolkit 1.2
+# README - System Optimizer Toolkit 1.5
 
-Overview
----------
-The System Optimizer Toolkit 1.2 is a comprehensive batch script designed for Windows users to enhance system performance, gather essential system information, and maintain overall health. The toolkit includes various tools for system optimization, maintenance, and diagnostics.
+## Introduction
+The System Optimizer Toolkit is a comprehensive utility designed to improve the performance of Windows operating systems. It provides a user-friendly interface for performing various system checks, optimizations, and maintenance tasks. This toolkit is particularly useful for users looking to enhance their system's efficiency, troubleshoot issues, and gather detailed information about their hardware and software configurations.
 
-Features
----------
-- Information Tools: Access detailed information about system hardware, software, and performance.
-- Optimization Tools: Clean temporary files, manage startup programs, and optimize system performance settings.
-- Backup and Restore: Easily back up important files and restore them when needed.
-- Maintenance Tools: Check for Windows updates, troubleshoot internet issues, and verify system file integrity.
-- Developer Information: Find information about the developer of the toolkit.
+## Requirements
+- **Operating System**: Windows (Windows 7 or newer is recommended).
+- **Administrator Privileges**: Some functionalities require the script to be run with administrator rights to access system-level information and make changes.
 
-Prerequisites
---------------
-- Windows operating system.
-- Administrative privileges to run certain features of the script.
-- Basic knowledge of command line usage.
+## How to Use
+1. **Download the Script**: Save the `SystemOptimizer.bat` file to a directory of your choice on your computer.
+2. **Run as Administrator**: 
+   - Right-click on the `SystemOptimizer.bat` file.
+   - Select "Run as administrator" to ensure the script has the necessary permissions to execute all features.
+3. **Follow On-Screen Instructions**: The script will present a menu with various options. You can enter the number corresponding to the desired action.
 
-Getting Started
-----------------
+## Features Overview
+The toolkit is divided into several categories, each containing specific tools and functionalities:
 
-Installation
--------------
-1. Download the script file SystemOptimizerToolkit.bat.
-2. Place the file in a directory of your choice.
+### 1. Information Tools
+These tools provide detailed insights into your system's hardware and software configurations.
 
-Running the Toolkit
---------------------
-1. Right-click on SystemOptimizerToolkit.bat and select Run as administrator.
-2. Follow the prompts in the menu to choose an option.
+- **View System Information**: 
+  - Displays general system information such as OS version, processor details, memory statistics, and disk drives.
+  - Utilizes the `systeminfo` command and `wmic` for detailed hardware information.
 
-Menu Options
--------------
-Upon running the script, you will see a menu with the following options:
-1. Information Tools
-2. Optimize Tools
-3. Backup and Restore
-4. Maintenance
-5. Developer Information
-6. Exit
+- **Internet Test**: 
+  - Pings a reliable external server (e.g., Google) to check internet connectivity.
+  - Logs the result to indicate whether the connection is stable or if there are issues.
 
-Select an option by typing the corresponding number and pressing Enter.
+- **TPM 2.0 Check**: 
+  - Checks if the Trusted Platform Module (TPM) version 2.0 is supported and enabled on the system.
+  - Important for security features in Windows 11 and BitLocker encryption.
 
-Detailed Sections
------------------
+- **Check Windows 11 Compatibility**: 
+  - Evaluates the system against the requirements for Windows 11, including processor compatibility, TPM status, and memory availability.
 
-Information Tools
--------------------
-- View System Information: Displays general and detailed system information.
-- Internet Test: Tests internet connectivity.
-- TPM 2.0 Check: Verifies if TPM 2.0 is supported and enabled.
-- Check Windows 11 Compatibility: Checks if the system meets Windows 11 requirements.
-- Battery Health Check: Generates a report on battery health.
-- Memory (RAM) Test: Initiates Windows Memory Diagnostic Tool.
-- Disk Health Check: Checks the health status of disk drives.
-- Graphics Card Info: Displays information about the graphics card.
-- CPU Stress Test: Provides recommendations for CPU stress testing tools.
-- Operating System Version: Displays the current OS version.
-- Update Check: Opens Windows Update settings.
-- System Uptime: Displays the system's uptime.
-- Firewall Status: Shows the status of the Windows Firewall.
-- User Account Control (UAC) Status: Displays the current UAC setting.
+- **Battery Health Check**: 
+  - Generates a battery report using the `powercfg` command, providing insights into battery health and performance.
+  - The report is saved as an HTML file in the user's directory.
 
-Optimize Tools
----------------
-- Delete Temp Files: Removes temporary files from the system.
-- Scan for Unwanted Programs: Lists installed programs and checks for unwanted software.
-- Optimize System Performance: Adjusts performance settings and disables unnecessary startup programs.
-- Test Hard Drive Health: Checks the status of hard drives for potential issues.
+- **Memory (RAM) Test**: 
+  - Initiates the Windows Memory Diagnostic Tool to check for memory issues.
+  - Prompts the user to restart the computer to perform the test.
 
-Backup and Restore
--------------------
-- Backup Important Files: Backs up user files from Documents, Desktop, Pictures, and Downloads.
-- Restore from Backup: Restores files from a specified backup location.
+- **Disk Health Check**: 
+  - Uses PowerShell to retrieve S.M.A.R.T. data from physical disks, assessing their health status.
 
-Maintenance
------------
-- Check for Windows Updates: Prompts to check for and install updates.
-- Internet Connection Issues: Provides options for troubleshooting internet issues.
-- System File Corruption: Guides to check and repair system files.
-- Application Issues: Offers solutions for troubleshooting application errors.
+- **Graphics Card Info**: 
+  - Displays information about the installed graphics card, including its name, driver version, and memory.
 
-Developer Information
----------------------
-- Displays developer name and contact information.
+- **CPU Stress Test**: 
+  - Provides guidance on using third-party software (e.g., Prime95) for stress testing the CPU.
 
-Logging
--------
-The toolkit generates a log file named SystemOptimizerLog.txt in the same directory as the script. This file records actions taken and any errors encountered during execution.
+- **Operating System Version**: 
+  - Displays the current OS version, build number, and edition.
 
-Notes
------
-- Ensure you run the script with administrative privileges for full functionality.
-- Review the log file for any errors or messages.
-- Modify paths and other settings in the script as necessary to suit your environment.
+- **Update Check**: 
+  - Opens the Windows Update settings to allow the user to check for and install updates.
 
-Contact
--------
-For issues or contributions, please reach out to the developer:
-- Name: Dark Virus
-- Email: N/A
-- GitHub: https://github.com/DV64
+- **System Uptime**: 
+  - Shows how long the system has been running since the last boot.
+
+- **Firewall Status**: 
+  - Provides detailed status information about the Windows Firewall for all profiles (Domain, Private, Public).
+
+- **User  Account Control (UAC) Status**: 
+  - Checks and displays the status of User Account Control settings.
+
+### 2. Optimization Tools
+These tools focus on improving system performance and cleaning up unnecessary files.
+
+- **Delete Temp Files**: 
+  - Cleans up temporary files from both the user and Windows temp directories to free up disk space.
+  - Logs the actions taken during the cleanup process.
+
+- **Scan for Unwanted Programs**: 
+  - Generates a list of installed programs and checks for potentially unwanted programs (PUPs) based on common keywords.
+  - Provides a report for user review.
+
+- **Optimize System Performance**: 
+  - Disables unnecessary startup programs to improve boot time.
+  - Sets the power plan to high performance for better responsiveness.
+  - Cleans temporary files and disables unnecessary services.
+  - Checks for outdated drivers and prompts the user for updates.
+
+### 3. Maintenance Tools
+These tools assist in troubleshooting and maintaining system integrity.
+
+- **Internet Connection Issues**: 
+  - Provides troubleshooting steps to diagnose and fix internet connectivity problems.
+  - Tests local network connectivity and external DNS resolution.
+
+- **System File Corruption**: 
+  - Runs the System File Checker (SFC) to scan for and repair corrupted system files.
+  - Optionally runs the DIS M tool to fix corrupted system images.
+
+- **Application Issues**: 
+  - Opens the Event Viewer to display application-specific logs for troubleshooting purposes.
+
+### 4. Developer Information
+- **Name**: Dark Virus
+- **Email**: N/A
+- **GitHub Profile**: github.com/DV64
+
+## Logging
+All activities, errors, and results are logged in the `logfile.log` located in the same directory as the program. You can review this file for details on the operations performed.
+
+## Notes
+- **Run as Administrator**: Ensure to run the script as an administrator for all necessary permissions.
+- **System Restart**: You may need to restart your system after using some tools.
+
+---
+
+**Disclaimer**: This program is a utility tool, and the developer is not responsible for any issues that may arise from its use.
