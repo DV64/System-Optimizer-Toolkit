@@ -1,115 +1,123 @@
-# README - System Optimizer Toolkit 1.5
+# System Optimizer Toolkit V 2.0 - ReadMe
 
-## Introduction
-The System Optimizer Toolkit is a comprehensive utility designed to improve the performance of Windows operating systems. It provides a user-friendly interface for performing various system checks, optimizations, and maintenance tasks. This toolkit is particularly useful for users looking to enhance their system's efficiency, troubleshoot issues, and gather detailed information about their hardware and software configurations.
-
-## Requirements
-- **Operating System**: Windows (Windows 7 or newer is recommended).
-- **Administrator Privileges**: Some functionalities require the script to be run with administrator rights to access system-level information and make changes.
-
-## How to Use
-1. **Download the Script**: Save the `SystemOptimizer.bat` file to a directory of your choice on your computer.
-2. **Run as Administrator**: 
-   - Right-click on the `SystemOptimizer.bat` file.
-   - Select "Run as administrator" to ensure the script has the necessary permissions to execute all features.
-3. **Follow On-Screen Instructions**: The script will present a menu with various options. You can enter the number corresponding to the desired action.
-
-## Features Overview
-The toolkit is divided into several categories, each containing specific tools and functionalities:
-
-### 1. Information Tools
-These tools provide detailed insights into your system's hardware and software configurations.
-
-- **View System Information**: 
-  - Displays general system information such as OS version, processor details, memory statistics, and disk drives.
-  - Utilizes the `systeminfo` command and `wmic` for detailed hardware information.
-
-- **Internet Test**: 
-  - Pings a reliable external server (e.g., Google) to check internet connectivity.
-  - Logs the result to indicate whether the connection is stable or if there are issues.
-
-- **TPM 2.0 Check**: 
-  - Checks if the Trusted Platform Module (TPM) version 2.0 is supported and enabled on the system.
-  - Important for security features in Windows 11 and BitLocker encryption.
-
-- **Check Windows 11 Compatibility**: 
-  - Evaluates the system against the requirements for Windows 11, including processor compatibility, TPM status, and memory availability.
-
-- **Battery Health Check**: 
-  - Generates a battery report using the `powercfg` command, providing insights into battery health and performance.
-  - The report is saved as an HTML file in the user's directory.
-
-- **Memory (RAM) Test**: 
-  - Initiates the Windows Memory Diagnostic Tool to check for memory issues.
-  - Prompts the user to restart the computer to perform the test.
-
-- **Disk Health Check**: 
-  - Uses PowerShell to retrieve S.M.A.R.T. data from physical disks, assessing their health status.
-
-- **Graphics Card Info**: 
-  - Displays information about the installed graphics card, including its name, driver version, and memory.
-
-- **CPU Stress Test**: 
-  - Provides guidance on using third-party software (e.g., Prime95) for stress testing the CPU.
-
-- **Operating System Version**: 
-  - Displays the current OS version, build number, and edition.
-
-- **Update Check**: 
-  - Opens the Windows Update settings to allow the user to check for and install updates.
-
-- **System Uptime**: 
-  - Shows how long the system has been running since the last boot.
-
-- **Firewall Status**: 
-  - Provides detailed status information about the Windows Firewall for all profiles (Domain, Private, Public).
-
-- **User  Account Control (UAC) Status**: 
-  - Checks and displays the status of User Account Control settings.
-
-### 2. Optimization Tools
-These tools focus on improving system performance and cleaning up unnecessary files.
-
-- **Delete Temp Files**: 
-  - Cleans up temporary files from both the user and Windows temp directories to free up disk space.
-  - Logs the actions taken during the cleanup process.
-
-- **Scan for Unwanted Programs**: 
-  - Generates a list of installed programs and checks for potentially unwanted programs (PUPs) based on common keywords.
-  - Provides a report for user review.
-
-- **Optimize System Performance**: 
-  - Disables unnecessary startup programs to improve boot time.
-  - Sets the power plan to high performance for better responsiveness.
-  - Cleans temporary files and disables unnecessary services.
-  - Checks for outdated drivers and prompts the user for updates.
-
-### 3. Maintenance Tools
-These tools assist in troubleshooting and maintaining system integrity.
-
-- **Internet Connection Issues**: 
-  - Provides troubleshooting steps to diagnose and fix internet connectivity problems.
-  - Tests local network connectivity and external DNS resolution.
-
-- **System File Corruption**: 
-  - Runs the System File Checker (SFC) to scan for and repair corrupted system files.
-  - Optionally runs the DIS M tool to fix corrupted system images.
-
-- **Application Issues**: 
-  - Opens the Event Viewer to display application-specific logs for troubleshooting purposes.
-
-### 4. Developer Information
-- **Name**: Dark Virus
-- **Email**: N/A
-- **GitHub Profile**: github.com/DV64
-
-## Logging
-All activities, errors, and results are logged in the `logfile.log` located in the same directory as the program. You can review this file for details on the operations performed.
-
-## Notes
-- **Run as Administrator**: Ensure to run the script as an administrator for all necessary permissions.
-- **System Restart**: You may need to restart your system after using some tools.
+## Overview
+The **System Optimizer Toolkit 2.0** is designed to help users optimize their Windows systems through a variety of tools categorized into different sections. Below is a detailed description of each tool available in the toolkit, organized by category.
 
 ---
 
-**Disclaimer**: This program is a utility tool, and the developer is not responsible for any issues that may arise from its use.
+## 1. Information Tools
+These tools provide comprehensive insights into your system's configuration and health.
+
+### a. System Specifications
+- **CPU Info**: Displays the CPU model, number of cores, and clock speed.
+- **RAM Info**: Shows total installed RAM, usable RAM, and memory speed.
+- **Graphics Card Info**: Provides details about the GPU, including model and memory size.
+- **Motherboard Info**: Displays the motherboard manufacturer and model.
+
+### b. Operating System Details
+- **OS Version**: Shows the installed version of Windows (e.g., Windows 10, Windows 11).
+- **Build Number**: Displays the specific build number of the operating system.
+- **Architecture**: Indicates whether the OS is 32-bit or 64-bit.
+
+### c. Disk Health Check
+- **S.M.A.R.T. Status**: Checks the health status of hard drives and SSDs using S.M.A.R.T. data.
+- **Disk Space Usage**: Displays total, used, and free space for each drive.
+
+### d. Network Configuration
+- **IP Address**: Displays the current IP address of the machine.
+- **Subnet Mask**: Shows the subnet mask associated with the IP address.
+- **Default Gateway**: Displays the default gateway used for network connections.
+- **DNS Servers**: Lists the DNS servers configured for the network.
+
+### e. TPM Check
+- **TPM Status**: Checks whether the system has TPM 2.0 support, which is required for Windows 11.
+
+### f. Windows 11 Compatibility Check
+- **Compatibility Report**: Analyzes the system requirements for Windows 11 and provides a report on compatibility.
+
+---
+
+## 2. Optimize Tools
+These tools help enhance system performance by cleaning unnecessary files and optimizing settings.
+
+### a. Temporary File Cleanup
+- **User Temp Files**: Deletes temporary files stored in the user profile.
+- **System Temp Files**: Removes temporary files from the Windows system directory.
+
+### b. Startup Program Management
+- **List Startup Programs**: Displays all programs that run at startup.
+- **Disable Startup Programs**: Allows users to disable selected programs from starting with Windows.
+
+### c. Disk Cleanup
+- **Run Disk Cleanup**: Executes the built-in Disk Cleanup utility to remove unnecessary system files, temporary files, and old Windows installations.
+
+### d. Power Plan Adjustment
+- **Set High Performance**: Changes the power plan to High Performance to enhance system responsiveness.
+
+### e. Defragmentation
+- **Run Defragmentation**: Initiates disk defragmentation for traditional hard drives to optimize file access times.
+
+---
+
+## 3. Maintenance Tools
+This section aids in diagnosing and fixing common system issues.
+
+### a. Internet Connectivity Troubleshooter
+- **Diagnose Connection Issues**: Runs a series of tests to identify and resolve common internet connectivity problems.
+
+### b. System File Checker (SFC)
+- **Scan and Repair**: Scans for corrupted system files and automatically repairs them.
+
+### c. DISM Tool
+- **Repair Windows Image**: Uses the Deployment Imaging Service and Management Tool to repair the Windows image and fix component store issues.
+
+### d. Event Viewer Access
+- **Open Event Viewer**: Launches the Event Viewer to allow users to review application and system logs for troubleshooting errors.
+
+---
+
+## 4. Network Tools
+These tools assist in managing and diagnosing network-related issues.
+
+### a. IP Configuration
+- **Display IP Configuration**: Shows current network configuration details using the `ipconfig` command.
+
+### b. Ping Utility
+- **Ping Host**: Allows users to ping specified hosts to check connectivity and response times.
+
+### c. DNS Lookup
+- **Resolve Domain Names**: Performs DNS lookups to resolve domain names to IP addresses.
+
+### d. Traceroute Tool
+- **Trace Route**: Traces the route packets take to reach a specified destination, helping identify network bottlenecks.
+
+### e. Network Statistics
+- **Display Network Stats**: Provides statistics related to network interfaces, including bytes sent and received.
+
+---
+
+## 5. Password Cracker Tools (Under Development)
+This feature is currently under development and aims to assist users in recovering passwords for compressed files.
+
+### a. 7-Zip Password Recovery
+- **Brute-Force Attack**: A planned tool that will utilize brute-force techniques to recover passwords from 7-Zip archives.
+- **Dictionary Attack**: A planned feature to use a dictionary file to attempt password recovery for 7-Zip files.
+
+### b. WinRAR Password Recovery
+- **Brute-Force Attack**: Similar functionality for WinRAR archives, allowing users to recover lost passwords.
+- **Dictionary Attack**: A planned feature to use a dictionary file for password recovery on WinRAR files.
+
+---
+
+## 6. Developer Information
+This section provides details about the toolkit's developer, including:
+- **Developer Name**: Information about the individual or team behind the toolkit.
+- **Contact Information**: Email or website for users to provide feedback or report issues.
+- **Version History**: A log of updates and changes made to the toolkit over time.
+
+---
+
+## Conclusion
+The **System Optimizer Toolkit 2.0** offers a wide range of tools designed to help users optimize their Windows systems effectively. Each tool serves a specific purpose, from gathering system information to enhancing performance and troubleshooting issues. This comprehensive toolkit is essential for anyone looking to maintain and improve their system's health.
+
+For any feedback, suggestions, or inquiries, please reach out to the developer.
