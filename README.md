@@ -1,7 +1,7 @@
-# System Optimizer Toolkit V 2.0 - ReadMe
+# System Optimizer Toolkit V 2.5 - ReadMe
 
 ## Overview
-The **System Optimizer Toolkit 2.0** is designed to help users optimize their Windows systems through a variety of tools categorized into different sections. Below is a detailed description of each tool available in the toolkit, organized by category.
+The **System Optimizer Toolkit 2.5** is designed to help users optimize their Windows systems through a variety of tools categorized into different sections. Below is a detailed description of each tool available in the toolkit, organized by category.
 
 ---
 
@@ -118,6 +118,6 @@ This section provides details about the toolkit's developer, including:
 ---
 
 ## Conclusion
-The **System Optimizer Toolkit 2.0** offers a wide range of tools designed to help users optimize their Windows systems effectively. Each tool serves a specific purpose, from gathering system information to enhancing performance and troubleshooting issues. This comprehensive toolkit is essential for anyone looking to maintain and improve their system's health.
+The **System Optimizer Toolkit 2.5** offers a wide range of tools designed to help users optimize their Windows systems effectively. Each tool serves a specific purpose, from gathering system information to enhancing performance and troubleshooting issues. This comprehensive toolkit is essential for anyone looking to maintain and improve their system's health.
 
 For any feedback, suggestions, or inquiries, please reach out to the developer.
