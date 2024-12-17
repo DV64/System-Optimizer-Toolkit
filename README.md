@@ -1,6 +1,5 @@
-===========================================================
         System Optimizer Toolkit 3.0
-===========================================================
+
 
 Welcome to the System Optimizer Toolkit 3.0! This toolkit is designed to help users optimize their Windows systems by providing various tools for information retrieval, system optimization, maintenance, and more. Below is a detailed description of each tool and section available in this toolkit.
 
