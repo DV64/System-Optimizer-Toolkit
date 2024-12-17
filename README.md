@@ -152,7 +152,4 @@ The System Optimizer Toolkit 3.0 is licensed under a proprietary license. All ri
 - **Disclaimer**: The developer is not liable for any damages or issues that may arise from the use of the toolkit. Use it at your own risk.
 
 By using this toolkit, you agree to comply with the terms outlined in this license.
----------------------------------------
-8. Contact Information
----------------------------------------
-For any questions, suggestions, or feedback, please contact the developer at [developer email] or visit their website at [developer website].
+
