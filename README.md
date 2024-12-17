@@ -1,123 +1,159 @@
-# System Optimizer Toolkit V 2.5 - ReadMe
+===========================================================
+        System Optimizer Toolkit 3.0
+===========================================================
 
-## Overview
-The **System Optimizer Toolkit 2.5** is designed to help users optimize their Windows systems through a variety of tools categorized into different sections. Below is a detailed description of each tool available in the toolkit, organized by category.
+Welcome to the System Optimizer Toolkit 3.0! This toolkit is designed to help users optimize their Windows systems by providing various tools for information retrieval, system optimization, maintenance, and more. Below is a detailed description of each tool and section available in this toolkit.
 
----
+---------------------------------------
+Table of Contents
+---------------------------------------
+1. Introduction
+2. Features Overview
+3. Tool Descriptions
+   3.1 Information Tools
+   3.2 Optimize Tools
+   3.3 Maintenance
+   3.4 Network Tools
+   3.5 Password Cracker Tools (Under Development)
+   3.6 Developer Information
+4. Usage Instructions
+5. Requirements
+6. Troubleshooting
+7. License
+8. Contact Information
 
-## 1. Information Tools
-These tools provide comprehensive insights into your system's configuration and health.
+---------------------------------------
+1. Introduction
+---------------------------------------
+The System Optimizer Toolkit 3.0 is a command-line based utility that provides a comprehensive suite of tools to help users maintain and optimize their Windows systems effectively. Designed for both novice and advanced users, this toolkit offers a user-friendly interface that allows for the execution of various system maintenance tasks. The toolkit requires administrative privileges to access certain features and logs all actions taken, enabling users to track changes and optimizations made to their systems.
 
-### a. System Specifications
-- **CPU Info**: Displays the CPU model, number of cores, and clock speed.
-- **RAM Info**: Shows total installed RAM, usable RAM, and memory speed.
-- **Graphics Card Info**: Provides details about the GPU, including model and memory size.
-- **Motherboard Info**: Displays the motherboard manufacturer and model.
+---------------------------------------
+2. Features Overview
+---------------------------------------
+- **Information Tools**: This suite of tools enables users to gather detailed system information, including hardware specifications, performance metrics, and system health checks. It empowers users to make informed decisions about upgrades and maintenance.
 
-### b. Operating System Details
-- **OS Version**: Shows the installed version of Windows (e.g., Windows 10, Windows 11).
-- **Build Number**: Displays the specific build number of the operating system.
-- **Architecture**: Indicates whether the OS is 32-bit or 64-bit.
+- **Optimize Tools**: These tools are focused on enhancing system performance by performing optimizations such as cleaning temporary files, managing startup programs, and adjusting system settings to free up resources and improve responsiveness.
 
-### c. Disk Health Check
-- **S.M.A.R.T. Status**: Checks the health status of hard drives and SSDs using S.M.A.R.T. data.
-- **Disk Space Usage**: Displays total, used, and free space for each drive.
+- **Maintenance**: This section provides tools to address common issues related to internet connectivity, system files, applications, and more. It helps users troubleshoot and resolve problems effectively, ensuring smooth operation.
 
-### d. Network Configuration
-- **IP Address**: Displays the current IP address of the machine.
-- **Subnet Mask**: Shows the subnet mask associated with the IP address.
-- **Default Gateway**: Displays the default gateway used for network connections.
-- **DNS Servers**: Lists the DNS servers configured for the network.
+- **Network Tools**: A collection of utilities designed to manage and analyze network settings and performance. These tools ensure a stable and efficient network connection, helping users diagnose and fix connectivity issues.
 
-### e. TPM Check
-- **TPM Status**: Checks whether the system has TPM 2.0 support, which is required for Windows 11.
+- **Password Cracker Tools**: A section currently under development aimed at providing tools for password recovery and management. Users are reminded to use these tools responsibly and ethically.
 
-### f. Windows 11 Compatibility Check
-- **Compatibility Report**: Analyzes the system requirements for Windows 11 and provides a report on compatibility.
+- **Developer Information**: This section provides details about the developer of the toolkit, including contact information and links to their work, fostering transparency and communication.
 
----
+---------------------------------------
+3. Tool Descriptions
+---------------------------------------
 
-## 2. Optimize Tools
-These tools help enhance system performance by cleaning unnecessary files and optimizing settings.
+3.1 Information Tools
+-----------------------
+This section provides various tools to retrieve and display system information, allowing users to assess their system's capabilities and health:
 
-### a. Temporary File Cleanup
-- **User Temp Files**: Deletes temporary files stored in the user profile.
-- **System Temp Files**: Removes temporary files from the Windows system directory.
+- **View System Information**: This tool displays comprehensive information about the system, including the operating system version, hardware specifications, and network adapter details. It is useful for diagnosing system specifications and compatibility with software applications.
 
-### b. Startup Program Management
-- **List Startup Programs**: Displays all programs that run at startup.
-- **Disable Startup Programs**: Allows users to disable selected programs from starting with Windows.
+- **Internet Test**: This tool checks for internet connectivity by sending requests to a reliable external server. It logs the results, helping users determine if their internet connection is stable and responsive.
 
-### c. Disk Cleanup
-- **Run Disk Cleanup**: Executes the built-in Disk Cleanup utility to remove unnecessary system files, temporary files, and old Windows installations.
+- **TPM 2.0 Check**: This tool verifies whether the system has TPM 2.0 enabled, which is essential for enhanced security features and compliance with Windows 11 requirements. It informs users about the security capabilities of their hardware.
 
-### d. Power Plan Adjustment
-- **Set High Performance**: Changes the power plan to High Performance to enhance system responsiveness.
+- **Check Windows 11 Compatibility**: This assessment tool evaluates whether the system meets the necessary requirements for upgrading to Windows 11, including checks for processor compatibility, RAM capacity, and TPM status.
 
-### e. Defragmentation
-- **Run Defragmentation**: Initiates disk defragmentation for traditional hard drives to optimize file access times.
+- **Battery Health Check**: This tool generates a detailed report on the health of the laptop battery, providing insights into charge cycles, capacity, and overall battery performance. It helps users understand the longevity and efficiency of their battery.
 
----
+- **Memory (RAM) Test**: This tool initiates a built-in diagnostic utility that checks the system's RAM for errors. It is crucial for identifying memory-related issues that could lead to system instability.
 
-## 3. Maintenance Tools
-This section aids in diagnosing and fixing common system issues.
+- **Disk Health Check**: This tool retrieves S.M.A.R.T. data from the system's hard drives, providing information on the health and status of disk drives. It helps users detect potential failures before they occur.
 
-### a. Internet Connectivity Troubleshooter
-- **Diagnose Connection Issues**: Runs a series of tests to identify and resolve common internet connectivity problems.
+- **Graphics Card Info**: This tool displays detailed information about the graphics card installed in the system, including its name, driver version, and performance metrics. It is useful for gaming and graphic-intensive applications.
 
-### b. System File Checker (SFC)
-- **Scan and Repair**: Scans for corrupted system files and automatically repairs them.
+- **CPU Stress Test**: This tool provides guidance on using third-party software for stress testing the CPU. It helps users ensure that their processor can handle demanding tasks without overheating or crashing.
 
-### c. DISM Tool
-- **Repair Windows Image**: Uses the Deployment Imaging Service and Management Tool to repair the Windows image and fix component store issues.
+- **Operating System Version**: This tool retrieves and displays the current operating system version and build number, which is helpful for troubleshooting compatibility issues with software.
 
-### d. Event Viewer Access
-- **Open Event Viewer**: Launches the Event Viewer to allow users to review application and system logs for troubleshooting errors.
+- **Update Check**: This tool opens the Windows Update settings, allowing users to check for and install the latest updates. Keeping the system updated is crucial for maintaining security and performance.
 
----
+- **System Uptime**: This tool displays the duration since the last system boot, helping users diagnose system crashes and instability.
 
-## 4. Network Tools
-These tools assist in managing and diagnosing network-related issues.
+- **Firewall Status**: This tool shows the current status of the Windows Firewall for all profiles, ensuring network security and protection from unauthorized access.
 
-### a. IP Configuration
-- **Display IP Configuration**: Shows current network configuration details using the `ipconfig` command.
+- **User Account Control (UAC) Status**: This tool displays the status of UAC settings, which control user permissions and access to system resources. It helps users manage user accounts and system security.
 
-### b. Ping Utility
-- **Ping Host**: Allows users to ping specified hosts to check connectivity and response times.
+3.2 Optimize Tools
+-------------------
+This section is designed to improve system performance through various optimization techniques:
 
-### c. DNS Lookup
-- **Resolve Domain Names**: Performs DNS lookups to resolve domain names to IP addresses.
+- **Delete Temp Files**: This tool removes temporary files from user and system directories, freeing up disk space and improving system responsiveness.
 
-### d. Traceroute Tool
-- **Trace Route**: Traces the route packets take to reach a specified destination, helping identify network bottlenecks.
+- **Scan for Unwanted Programs**: This tool scans for and lists unwanted programs that may be slowing down the system. It helps users identify and remove unnecessary applications.
 
-### e. Network Statistics
-- **Display Network Stats**: Provides statistics related to network interfaces, including bytes sent and received.
+- **Optimize System Performance**: This tool performs a series of optimizations, including disabling unnecessary startup programs, setting the power plan to high performance, and cleaning up temporary files. It enhances system performance and responsiveness.
 
----
+3.3 Maintenance
+----------------
+Tools in this section help address common system issues:
 
-## 5. Password Cracker Tools (Under Development)
-This feature is currently under development and aims to assist users in recovering passwords for compressed files.
+- **Internet Connection Issues**: This tool provides troubleshooting steps for resolving internet connectivity problems, including DNS resolution and network adapter configuration.
 
-### a. 7-Zip Password Recovery
-- **Brute-Force Attack**: A planned tool that will utilize brute-force techniques to recover passwords from 7-Zip archives.
-- **Dictionary Attack**: A planned feature to use a dictionary file to attempt password recovery for 7-Zip files.
+- **System File Corruption**: This tool scans and repairs corrupted system files, ensuring system stability and integrity.
 
-### b. WinRAR Password Recovery
-- **Brute-Force Attack**: Similar functionality for WinRAR archives, allowing users to recover lost passwords.
-- **Dictionary Attack**: A planned feature to use a dictionary file for password recovery on WinRAR files.
+- **Application Issues**: This tool offers solutions for common application problems, such as compatibility issues and crashes.
 
----
+- **Registry Maintenance**: This section is under development and will provide tools for managing registry entries, which can improve system performance and stability.
 
-## 6. Developer Information
-This section provides details about the toolkit's developer, including:
-- **Developer Name**: Information about the individual or team behind the toolkit.
-- **Contact Information**: Email or website for users to provide feedback or report issues.
-- **Version History**: A log of updates and changes made to the toolkit over time.
+3.4 Network Tools
+------------------
+This section will include tools for managing network settings and performance analysis (future implementation).
 
----
+3.5 Password Cracker Tools (Under Development)
+-----------------------------------------------
+This section is currently under development and will provide tools for recovering lost or forgotten passwords. Users are reminded to use these tools responsibly and ethically.
 
-## Conclusion
-The **System Optimizer Toolkit 2.5** offers a wide range of tools designed to help users optimize their Windows systems effectively. Each tool serves a specific purpose, from gathering system information to enhancing performance and troubleshooting issues. This comprehensive toolkit is essential for anyone looking to maintain and improve their system's health.
+3.6 Developer Information
+-------------------------
+This section provides details about the developer, including contact information and links to their work.
 
-For any feedback, suggestions, or inquiries, please reach out to the developer.
+---------------------------------------
+4. Usage Instructions
+---------------------------------------
+To use the System Optimizer Toolkit 3.0:
+1. Download the toolkit and extract it to a directory of your choice.
+2. Open a Command Prompt as Administrator.
+3. Navigate to the directory where the toolkit is located.
+4. Run the script by typing the name of the script file.
+5. Follow the on-screen instructions to access the various tools and features.
+
+---------------------------------------
+5. Requirements
+---------------------------------------
+- **Windows 7 or later (64-bit)**: The toolkit is designed to work on 64-bit versions of Windows 7 or later. This ensures compatibility with modern hardware and software environments.
+
+- **Administrative privileges**: The toolkit requires administrative privileges to access certain features and perform system modifications. Users must run the toolkit as an administrator to ensure all functionalities operate correctly and securely.
+
+- **.NET Framework 4.8 or later**: The toolkit relies on the .NET Framework for certain functionality, enabling it to utilize advanced programming features and libraries essential for optimal performance.
+
+- **Command Prompt (CMD)**: The toolkit is designed to be executed in a Command Prompt environment. Users should have a basic understanding of how to navigate and operate within CMD to effectively utilize the toolkit's features. The command-line interface allows for efficient execution of tasks and provides real-time feedback on operations performed by the toolkit.
+
+---------------------------------------
+6. Troubleshooting
+---------------------------------------
+If you encounter any issues while using the toolkit, refer to the troubleshooting section below for common solutions:
+- **Error Messages**: Check the error messages for specific guidance on resolving the issue.
+- **System Requirements**: Ensure the system meets the minimum requirements for the toolkit.
+- **Script Errors**: Check the script for syntax errors or missing dependencies.
+
+---------------------------------------
+7. License
+---------------------------------------
+The System Optimizer Toolkit 3.0 is licensed under a proprietary license. All rights are reserved by the developer. 
+
+- **Usage**: You are permitted to use the toolkit for personal and non-commercial purposes. 
+
+- **Modification and Distribution**: Modifying, redistributing, or repackaging the toolkit in any form is strictly prohibited without explicit written permission from the developer. Unauthorized distribution or use of the toolkit is considered a violation of this license.
+
+- **Disclaimer**: The developer is not liable for any damages or issues that may arise from the use of the toolkit. Use it at your own risk.
+
+By using this toolkit, you agree to comply with the terms outlined in this license.
+---------------------------------------
+8. Contact Information
+---------------------------------------
+For any questions, suggestions, or feedback, please contact the developer at [developer email] or visit their website at [developer website].
