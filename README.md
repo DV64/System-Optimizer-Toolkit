@@ -1,7 +1,6 @@
-        System Optimizer Toolkit 3.0
+**### System Optimizer Toolkit 3.1**
 
-
-Welcome to the System Optimizer Toolkit 3.0! This toolkit is designed to help users optimize their Windows systems by providing various tools for information retrieval, system optimization, maintenance, and more. Below is a detailed description of each tool and section available in this toolkit.
+Welcome to the System Optimizer Toolkit 3.1! This toolkit is designed to help users optimize their Windows systems by providing various tools for information retrieval, system optimization, maintenance, and more. Below is a detailed description of each tool and section available in this toolkit.
 
 ---------------------------------------
 Table of Contents
@@ -24,7 +23,7 @@ Table of Contents
 ---------------------------------------
 1. Introduction
 ---------------------------------------
-The System Optimizer Toolkit 3.0 is a command-line based utility that provides a comprehensive suite of tools to help users maintain and optimize their Windows systems effectively. Designed for both novice and advanced users, this toolkit offers a user-friendly interface that allows for the execution of various system maintenance tasks. The toolkit requires administrative privileges to access certain features and logs all actions taken, enabling users to track changes and optimizations made to their systems.
+The System Optimizer Toolkit 3.1 is a command-line based utility that provides a comprehensive suite of tools to help users maintain and optimize their Windows systems effectively. Designed for both novice and advanced users, this toolkit offers a user-friendly interface that allows for the execution of various system maintenance tasks. The toolkit requires administrative privileges to access certain features and logs all actions taken, enabling users to track changes and optimizations made to their systems.
 
 ---------------------------------------
 2. Features Overview
@@ -114,7 +113,7 @@ This section provides details about the developer, including contact information
 ---------------------------------------
 4. Usage Instructions
 ---------------------------------------
-To use the System Optimizer Toolkit 3.0:
+To use the System Optimizer Toolkit 3.1:
 1. Download the toolkit and extract it to a directory of your choice.
 2. Open a Command Prompt as Administrator.
 3. Navigate to the directory where the toolkit is located.
@@ -127,8 +126,6 @@ To use the System Optimizer Toolkit 3.0:
 - **Windows 7 or later (64-bit)**: The toolkit is designed to work on 64-bit versions of Windows 7 or later. This ensures compatibility with modern hardware and software environments.
 
 - **Administrative privileges**: The toolkit requires administrative privileges to access certain features and perform system modifications. Users must run the toolkit as an administrator to ensure all functionalities operate correctly and securely.
-
-- **.NET Framework 4.8 or later**: The toolkit relies on the .NET Framework for certain functionality, enabling it to utilize advanced programming features and libraries essential for optimal performance.
 
 - **Command Prompt (CMD)**: The toolkit is designed to be executed in a Command Prompt environment. Users should have a basic understanding of how to navigate and operate within CMD to effectively utilize the toolkit's features. The command-line interface allows for efficient execution of tasks and provides real-time feedback on operations performed by the toolkit.
 
@@ -143,7 +140,7 @@ If you encounter any issues while using the toolkit, refer to the troubleshootin
 ---------------------------------------
 7. License
 ---------------------------------------
-The System Optimizer Toolkit 3.0 is licensed under a proprietary license. All rights are reserved by the developer. 
+The System Optimizer Toolkit 3.1 is licensed under a proprietary license. All rights are reserved by the developer. 
 
 - **Usage**: You are permitted to use the toolkit for personal and non-commercial purposes. 
 
@@ -152,4 +149,3 @@ The System Optimizer Toolkit 3.0 is licensed under a proprietary license. All ri
 - **Disclaimer**: The developer is not liable for any damages or issues that may arise from the use of the toolkit. Use it at your own risk.
 
 By using this toolkit, you agree to comply with the terms outlined in this license.
-
