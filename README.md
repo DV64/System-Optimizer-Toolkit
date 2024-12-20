@@ -1,6 +1,6 @@
 **### System Optimizer Toolkit 3.2**
 
-Welcome to the System Optimizer Toolkit 3.2! This toolkit is designed to help users optimize their Windows systems by providing various tools for information retrieval, system optimization, maintenance, and more. Below is a detailed description of each tool and section available in this toolkit.
+Welcome to the System Optimizer Toolkit 3.5! This toolkit is designed to help users optimize their Windows systems by providing various tools for information retrieval, system optimization, maintenance, and more. Below is a detailed description of each tool and section available in this toolkit.
 
 ---------------------------------------
 Table of Contents
@@ -23,7 +23,7 @@ Table of Contents
 ---------------------------------------
 1. Introduction
 ---------------------------------------
-The System Optimizer Toolkit 3.2 is a command-line based utility that provides a comprehensive suite of tools to help users maintain and optimize their Windows systems effectively. Designed for both novice and advanced users, this toolkit offers a user-friendly interface that allows for the execution of various system maintenance tasks. The toolkit requires administrative privileges to access certain features and logs all actions taken, enabling users to track changes and optimizations made to their systems.
+The System Optimizer Toolkit 3.5 is a command-line based utility that provides a comprehensive suite of tools to help users maintain and optimize their Windows systems effectively. Designed for both novice and advanced users, this toolkit offers a user-friendly interface that allows for the execution of various system maintenance tasks. The toolkit requires administrative privileges to access certain features and logs all actions taken, enabling users to track changes and optimizations made to their systems.
 
 ---------------------------------------
 2. Features Overview
@@ -113,7 +113,7 @@ This section provides details about the developer, including contact information
 ---------------------------------------
 4. Usage Instructions
 ---------------------------------------
-To use the System Optimizer Toolkit 3.2:
+To use the System Optimizer Toolkit 3.5:
 1. Download the toolkit and extract it to a directory of your choice.
 2. Open a Command Prompt as Administrator.
 3. Navigate to the directory where the toolkit is located.
@@ -140,7 +140,7 @@ If you encounter any issues while using the toolkit, refer to the troubleshootin
 ---------------------------------------
 7. License
 ---------------------------------------
-The System Optimizer Toolkit 3.2 is licensed under a proprietary license. All rights are reserved by the developer. 
+The System Optimizer Toolkit 3.5 is licensed under a proprietary license. All rights are reserved by the developer. 
 
 - **Usage**: You are permitted to use the toolkit for personal and non-commercial purposes. 
 
